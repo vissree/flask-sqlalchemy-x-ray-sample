@@ -23,8 +23,8 @@ python wsgi.py
 
 ```bash
 for id in {100..110}; do
-    curl -X POST "http://localhost/${id}"
-    curl "http://localhost/${id}"
+    curl -X POST "http://localhost:8080/${id}"
+    curl "http://localhost:8080/${id}"
     sleep .25
 done
 ```
@@ -33,8 +33,8 @@ done
 
 ## References
 
-[AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python.html)
-[X-Ray SDK for Python middleware](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-middleware.html)
-[Patching libraries to instrument downstream calls](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-patching.html)
-[Generating custom subsegements](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-subsegments.html)
+[AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python.html) </br>
+[X-Ray SDK for Python middleware](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-middleware.html) </br>
+[Patching libraries to instrument downstream calls](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-patching.html) </br>
+[Generating custom subsegements](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-python-subsegments.html) </br>
 [AWS X-Ray Daemon](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-local.html)
